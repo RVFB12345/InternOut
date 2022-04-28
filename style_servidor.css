@@ -4,7 +4,7 @@
 }
 body{
     background: url(img-servidor.png);
-    background-size: 1920px;
+    background-size: 1620px;
     background-repeat: no-repeat;
     background-position-y: -100px;
 }
@@ -148,6 +148,9 @@ a {
     margin-bottom: 10px;
   }
   @media (max-width: 600px) {
+    body{
+      background: white;
+    }
     .box{
       width: 300px;
       position: relative;
@@ -244,5 +247,5 @@ a {
     }
     #quarto3{
       top: 34rem;
-    }
+    }                             
   }
