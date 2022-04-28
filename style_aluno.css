@@ -1,5 +1,7 @@
 *{
+
     margin: 0 0;
+
     padding: 0 0;
 }
 body{
@@ -174,7 +176,7 @@ flex-direction: column;
       display: none; 
     }     
     h2{
-      width: 82.5vw;
+      width: 83.1vw;
     }    
     .input-nome{
       width: 25vw;
