@@ -1,8 +1,5 @@
 body{
     font-family: Arial, Helvetica, sans-serif; 
-    background: url(img-cadastrar.jpg);
-    background-size: cover;
-    background-position-y: -300px;
 }
 .box{
   width: 500px;
@@ -124,6 +121,9 @@ a {
   margin-bottom: 10px;
 }
 @media (max-width: 600px) {
+  body{
+    background: white;
+  }
   .box{
     width: 300px;
     position: relative;
