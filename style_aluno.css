@@ -1,0 +1,176 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+body{
+    background: url(img-servidor.png);
+    background-size: 1620px;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Header menu*/
+a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-bottom: none;
+  }
+  .li-header{
+      border-bottom: none;
+  }
+  .a-header:hover{
+      background: #363636;
+  }
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #header {
+    width: auto;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4F4F4F;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+  }
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  
+#box{
+    display: flex;
+    justify-content: center;
+}
+h2{
+  width: 41vw;
+  text-align: center;
+  margin: auto;
+  color: white;
+  background: #696969;
+  padding: 15px 0;
+}
+#container{
+  position: relative;
+  top: 80px;
+}
+#nome, #presente, #ausente{
+display: flex;
+flex-direction: column;
+}
+
+.h3{
+    color: white;
+    background: #696969;
+    width: 13vw;
+    padding: 10px 5px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    text-align: center;
+}
+.input-nome{
+  font-family: Arial, Helvetica, sans-serif;
+    width: 13vw;
+    background: #696969;
+    border: none;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+}
+#nome input{
+  text-align: start;
+}
+#ausente input, .h3{
+     border-right: transparent;
+}
+  @media (max-width: 600px) {
+    body{
+      background: white;
+    }
+
+     #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 50px;
+      right: 0px;
+      background: #4F4F4F;
+      transition: 0.5s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #nav.active #menu {
+      height: 6.6rem;
+      visibility: visible;
+      overflow-y: auto;
+    }
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, .1);
+    }
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      color: white;
+    }
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    #title{
+      display: none; 
+    }             
+  }
