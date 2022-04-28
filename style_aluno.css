@@ -172,5 +172,14 @@ flex-direction: column;
     }
     #title{
       display: none; 
-    }             
+    }     
+    h2{
+      width: 82.5vw;
+    }    
+    .input-nome{
+      width: 25vw;
+    }    
+    .h3{
+      width: 25vw;
+    }
   }
