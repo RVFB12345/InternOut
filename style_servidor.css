@@ -225,7 +225,7 @@ a {
     .pavilhao{
       width: 300px;
       margin: auto;
-      margin-top: 30px;
+      margin-top: 50px;
     }
     .pavilhoes{
       position: fixed;
@@ -238,12 +238,12 @@ a {
       width: 60vw;
     }
     #quarto1{
-      top: 80px;
+      top: 90px;
     }
     #quarto2{
-      top: 19.5rem;
+      top: 21.5rem;
     }
     #quarto3{
-      top: 34rem;
-    }                             
+      top: 36rem;
+    }    
   }
